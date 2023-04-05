@@ -23,10 +23,6 @@ public class Customer {
         addresses[currentAddressIndex++] = address;
     }
 
-    public void addAddress2(Address[] addresses) {
-        this.addresses = addresses;
-    }
-
     public String getCustomerInfo() {
 
         String result = "customerName = " + customerName + " "
