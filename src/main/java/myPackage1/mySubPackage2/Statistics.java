@@ -19,13 +19,8 @@ public class Statistics {
     public void talkToMe(String testimony, double witnessCount) {
     }
 
-
-
 }
 
 
-class Main {
-    public static void main(String[] args) {
-    }
-}
+
 
