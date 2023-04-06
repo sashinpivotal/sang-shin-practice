@@ -6,7 +6,6 @@ public class Customer {
     private String email;
     private Product[] products;
 
-
     public Customer() {
     }
 

@@ -1,6 +1,6 @@
 package class_practice;
 
-class Main4 {
+class Main {
     public static void main(String[] args) {
         StudentRecord student1 = new StudentRecord();
         student1.setName("Robert");

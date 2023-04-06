@@ -1,6 +1,6 @@
 package array_practice;
 
-public class Main1 {
+public class Main {
     public static void main(String[] args) {
 
         int[] myIntArray = {1, 2, 3};
