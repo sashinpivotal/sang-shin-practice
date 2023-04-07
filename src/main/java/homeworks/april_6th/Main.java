@@ -1,4 +1,4 @@
-package homeworks.april_1st;
+package homeworks.april_6th;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package myPackage1.mySubPackage2;
+package package_practice.mySubPackage2;
 
-import myPackage1.mySubPackage1.MyClass3;
+import package_practice.mySubPackage1.MyClass3;
 
 public class MyClassInAnotherPackage {
 

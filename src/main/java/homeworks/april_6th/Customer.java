@@ -1,4 +1,4 @@
-package homeworks.april_1st;
+package homeworks.april_6th;
 
 public class Customer {
     private String customerName;

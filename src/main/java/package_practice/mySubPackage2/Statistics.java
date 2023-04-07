@@ -1,6 +1,4 @@
-package myPackage1.mySubPackage2;
-
-import java.util.Formatter;
+package package_practice.mySubPackage2;
 
 public class Statistics {
 

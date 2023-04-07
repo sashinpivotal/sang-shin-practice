@@ -1,4 +1,4 @@
-package myPackage1.mySubPackage2;
+package package_practice.mySubPackage2;
 
 public class Main22 {
 

@@ -1,4 +1,4 @@
-package homeworks.april_1st.my_sub_package;
+package homeworks.april_6th;
 
 public class Address {
 

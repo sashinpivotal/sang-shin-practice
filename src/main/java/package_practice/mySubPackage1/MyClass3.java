@@ -1,4 +1,4 @@
-package myPackage1.mySubPackage1;
+package package_practice.mySubPackage1;
 
 public class MyClass3 {
 
