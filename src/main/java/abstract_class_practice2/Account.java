@@ -1,5 +1,7 @@
 package abstract_class_practice2;
 
+import java.util.Scanner;
+
 public abstract class Account {
 
     private String name;
@@ -29,7 +31,7 @@ class SavingsAccountImpl implements AccountInterface, WhateverInterface {
 
     @Override
     public void deposit(double amount) {
-
+        Scanner x;
     }
 
     @Override
@@ -79,7 +81,8 @@ class CheckingAccount extends Account {
 
 class Main {
     public static void main(String[] args) {
-        Account account1 = new SavingAccount(10.0);
-        account1.withDraw();
+
     }
+
+
 }
