@@ -48,7 +48,32 @@ public class Main {
         Map<String, Item> myItemsInHashMap
                 = mySystem.getMyItemsInHashMap();
         Collection<Item> values = myItemsInHashMap.values();
-        for (Item item2: values) {
+        displayItemMap(values);
+
+        System.out.println("----------- Testing addItem(..) method -----");
+        int sizeBeforeAddingANewItem = myItemsInHashMap.size();
+        Item item3 = new Item("oatmeal",
+                "too healthy",
+                20.0,
+                10);
+        myItemsInHashMap.put(item.getItemName(), item3);
+        int sizeAfterAddingANewItem = myItemsInHashMap.size();
+        System.out.println("size before adding a new item = " + sizeBeforeAddingANewItem);
+        System.out.println("size after adding a new item = " + sizeAfterAddingANewItem);
+        Collection<Item> values2 = myItemsInHashMap.values();
+        displayItemMap(values2);
+
+        Item item4 = new Item("pizza",
+                "too healthy",
+                20.0,
+                10);
+        myItemsInHashMap.put(item.getItemName(), item4);
+        System.out.println("size after adding a existing item = " + sizeAfterAddingANewItem);
+
+    }
+
+    private static void displayItemMap(Collection<Item> values) {
+        for (Item item2 : values) {
             System.out.printf("%-20s %-20s %-10.2f %-10d %n",
                     item2.getItemName(),
                     item2.getItemDescription(),

@@ -32,6 +32,23 @@ public class MySystem {
         }
     }
 
+    public Item addItem(Item item) {
+
+        Item result = null;
+        boolean itemIsAlreadyPresent
+                = myItemsInHashMap.containsKey(item.getItemName());
+        if (itemIsAlreadyPresent) {
+            System.out.println(item.getItemName()
+                    + " is already present.  Cannot be added.");
+            result = null;
+        }
+
+        result = item;
+        myItemsInHashMap.put(item.getItemName(), item);
+
+        return result;
+    }
+
     public Map<String, Item> getMyItemsInHashMap() {
         return myItemsInHashMap;
     }
