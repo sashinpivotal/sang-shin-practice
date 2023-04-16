@@ -1,0 +1,4 @@
+pizza  very cheesy  12.30  3
+salad  cobb salad  15.50  12
+hunger burger  huge patty  9.49  10
+fried chicken  so crispy  18.99  5
