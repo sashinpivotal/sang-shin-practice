@@ -2,12 +2,12 @@ package sba_package;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
+        System.out.println("----------- Testing reading sample.txt -----");
         System.out.printf("%-20s %-20s %-10s %-10s %n",
                 "Name",
                 "Description",
@@ -34,6 +34,7 @@ public class Main {
                     itemAvailableQuantity);
         }
 
+        System.out.println("----------- Testing the constructor of Item class -----");
         Item item = new Item("noodle", "really good", 20.0, 20);
         System.out.printf("%-20s %-20s %-10.2f %-10d %-10d %n",
                 item.getItemName(),
@@ -41,5 +42,18 @@ public class Main {
                 item.getPrice(),
                 item.getQuantity(),
                 item.getAvailableQuantity());
+
+        System.out.println("----------- Testing the constructor of MySystem class -----");
+        MySystem mySystem = new MySystem();
+        Map<String, Item> myItemsInHashMap
+                = mySystem.getMyItemsInHashMap();
+        Collection<Item> values = myItemsInHashMap.values();
+        for (Item item2: values) {
+            System.out.printf("%-20s %-20s %-10.2f %-10d %n",
+                    item2.getItemName(),
+                    item2.getItemDescription(),
+                    item2.getPrice(),
+                    item2.getAvailableQuantity());
+        }
     }
 }
