@@ -49,6 +49,19 @@ public class MySystem {
         return result;
     }
 
+    public Item removeItem(String itemName) {
+
+        Item result = null;
+
+        boolean itemIsAlreadyPresent
+                = myItemsInHashMap.containsKey(itemName);
+        if (itemIsAlreadyPresent) {
+            result = myItemsInHashMap.remove(itemName);
+        }
+
+        return result;
+    }
+
     public Map<String, Item> getMyItemsInHashMap() {
         return myItemsInHashMap;
     }

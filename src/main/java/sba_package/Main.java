@@ -58,8 +58,10 @@ public class Main {
                 10);
         myItemsInHashMap.put(item.getItemName(), item3);
         int sizeAfterAddingANewItem = myItemsInHashMap.size();
-        System.out.println("size before adding a new item = " + sizeBeforeAddingANewItem);
-        System.out.println("size after adding a new item = " + sizeAfterAddingANewItem);
+        System.out.println("size before adding a new item = "
+                + sizeBeforeAddingANewItem);
+        System.out.println("size after adding a new item = "
+                + sizeAfterAddingANewItem);
         Collection<Item> values2 = myItemsInHashMap.values();
         displayItemMap(values2);
 
@@ -68,7 +70,13 @@ public class Main {
                 20.0,
                 10);
         myItemsInHashMap.put(item.getItemName(), item4);
-        System.out.println("size after adding a existing item = " + sizeAfterAddingANewItem);
+        System.out.println("size after adding a existing item = "
+                + sizeAfterAddingANewItem);
+
+        System.out.println("----------- Testing removeItem(..) method -----");
+        mySystem.removeItem("pizza");
+        Collection<Item> values3 = myItemsInHashMap.values();
+        displayItemMap(values3);
 
     }
 
