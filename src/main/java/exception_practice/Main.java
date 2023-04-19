@@ -1,26 +1,48 @@
 package exception_practice;
 
+import inheritance_practice.Student;
+import package_practice.mySubPackage2.Person;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        try {
-            myMethod2(0);
-        } catch (MyOwnArithmeticException e) {
-            System.out.println(e.getLocalDate());
-        }
+
+
+        // Type safe code example
+        List<String> strings = new ArrayList<String>();
+        strings.add("jon");
+        strings.add("mary");
+
+        // Code example that is not "type-safe"
+        List strings2 = new ArrayList();
+        strings2.add("sang");
+        strings2.add(2);
+        String x = (String) strings2.get(1);
+        System.out.println(x);
+
+        Person person1 = new Person();
+        myMethod10(person1);
+
+        IPerson person = new Janitor();
+        myMethod11(person);
+
     }
 
-    private static void myMethod1() throws FileNotFoundException {
-        try {
-            myMethod2(0);
-            myMethod4();
-        } catch (ArithmeticException e) {
-            System.out.println("I handled it");
-        }
+    public static void myMethod10(Person person) {
+        person.sayHello();
+    }
 
+    public static void myMethod11(IPerson person) {
+        person.sayHello();
+    }
+
+    private static void myMethod1()
+            throws FileNotFoundException, ArithmeticException {
+        myMethod2(0);
+        myMethod4();
     }
 
     private static void myMethod4() throws FileNotFoundException {
