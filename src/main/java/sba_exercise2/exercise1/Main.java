@@ -22,9 +22,8 @@ public class Main {
         ArrayList<String> aNewArrayListFromExistingArray = myOperation.createANewArrayListFromExistingArray();
         System.out.println(aNewArrayListFromExistingArray);
 
-        Scanner scanner = new Scanner(System.in);
         try {
-            int anInt = scanner.nextInt();
+            throw new MyOwnException("This is my own exception message");
         } catch (MyOwnException e) {
             System.out.println("----");
             System.out.println(e.getMessage());
@@ -33,7 +32,7 @@ public class Main {
     }
 }
 
-class MyOwnException extends InputMismatchException {
+class MyOwnException extends Exception{
     public MyOwnException(String message) {
         super(message);
     }
