@@ -1,4 +1,4 @@
-package sba_exercise2.exercise2;
+package sba2.exercise2;
 
 import java.util.Arrays;
 

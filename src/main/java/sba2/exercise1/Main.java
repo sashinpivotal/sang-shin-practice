@@ -1,8 +1,6 @@
-package sba_exercise2.exercise1;
+package sba2.exercise1;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
